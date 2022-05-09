@@ -1,0 +1,16 @@
+<template>
+  <svg width="1em" height="1em" viewBox="0 0 256 256">
+    <path
+      fill="currentColor"
+      d="M224.3 154.9A100 100 0 1 1 101 31.7a7.9 7.9 0 0 1 10.3 8.1a5.7 5.7 0 0 1-.3 1.8A84 84 0 0 0 214.3 145l2.2-.4a8.1 8.1 0 0 1 7.8 5.7a7.2 7.2 0 0 1 0 4.6Z"
+    ></path>
+  </svg>
+</template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "MoonIcon",
+});
+</script>

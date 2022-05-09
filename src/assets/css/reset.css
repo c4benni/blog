@@ -1,0 +1,82 @@
+/* css reset */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  transition-timing-function: ease;
+  outline-width: 0.5px;
+  outline-color: var(--divide-color);
+  width: var(--_size, initial);
+  height: var(--_size, initial);
+}
+
+html {
+  font-family: var(--default-font-family);
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  --padding-right: 0px;
+  overflow-x: hidden;
+  height: stretch;
+  background-color: var(--surface);
+  color: var(--surface-text);
+}
+
+html.dark-theme {
+  color-scheme: dark;
+}
+
+html.light-theme {
+  color-scheme: light;
+}
+
+@media (max-width: 612px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+input,
+select,
+textarea {
+  font-size: 16px;
+  caret-color: currentColor;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: initial;
+  color: var(--anchor);
+}
+
+h1,
+h2 {
+  letter-spacing: -0.05rem;
+}
+
+#app {
+  max-width: 1008px;
+  margin: 0 auto;
+}
+
+@media (min-width: 970px) {
+  #app {
+    padding: 0 8px;
+  }
+}

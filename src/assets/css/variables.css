@@ -1,0 +1,52 @@
+:root {
+  --header-height: 56px;
+  --scroll-bar-size: 8px;
+}
+
+:root,
+*,
+*:before,
+*:after {
+  --default-font-family: "Sarabun", sans-serif;
+  --scroll-bar-size: var(--default-scroll-bar-size);
+  --rounded-sm: 2px;
+  --rounded: 4px;
+  --rounded-lg: 8px;
+  --pill-sm: 8px;
+  --pill: 12px;
+  --pill-lg: 18px;
+  --max-width: 1000px;
+  --divide: var(--divide-width, 0.5px) solid var(--divide-color);
+
+  --white: #fff;
+  --black: #000;
+
+  --anchor: rgba(9, 105, 218, var(--anchor-alpha, 1));
+  --surface: rgba(245, 245, 245, var(--surface-alpha, 1));
+  --raised: rgba(250, 250, 250, var(--raised-alpha, 1));
+  --surface-text: rgba(24, 24, 24, var(--surface-text-alpha, 1));
+  --raised-text: rgba(24, 24, 24, var(--raised-text-alpha, 1));
+  --divide-color: rgba(68, 68, 68, var(--divide-color-alpha, 1));
+
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+  --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.05),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.dark *,
+.dark *:before,
+.dark *:after,
+:root.dark {
+  --anchor: rgba(88, 166, 255, var(--anchor-alpha, 1));
+  --surface: rgba(9, 9, 9, var(--surface-alpha, 1));
+  --raised: rgba(24, 24, 24, var(--raised-alpha, 1));
+  --surface-text: rgba(245, 245, 245, var(--surface-text-alpha, 1));
+  --raised-text: rgba(250, 250, 250, var(--raised-text-alpha, 1));
+  --divide-color: rgba(90, 90, 90, var(--divide-color-alpha, 1));
+
+  --shadow: 0 1px 3px 0 rgb(100 100 100 / 0.1),
+    0 1px 2px -1px rgb(150 150 150 / 0.1);
+  --shadow-lg: 0 20px 25px -5px rgb(100 100 100 / 0.05),
+    0 8px 10px -6px rgb(150 150 150 / 0.1);
+}
